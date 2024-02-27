@@ -1,0 +1,34 @@
+
+%flow model (i,i,o)
+% Case for when the first list is empty.
+merge_sorted([], L, L).
+%Case for when the second list is empty
+merge_sorted(L,[],L).
+% Merging two sorted lists with duplicates removed.
+merge_sorted([H1 | T1], [H2 | T2], Merged) :-
+    H1 = H2,                                % If the heads are equal, skip one of them.
+    merge_sorted([H1 | T1], T2, Merged).
+
+merge_sorted([H1 | T1], [H2 | T2], [H1 | Merged]) :-
+    H1 < H2,                                % If H1 is smaller, add it to the merged list.
+    merge_sorted(T1, [H2 | T2], Merged).
+
+merge_sorted([H1 | T1], [H2 | T2], [H2 | Merged]) :-
+    H1 > H2,                                % If H2 is smaller, add it to the merged list.
+    merge_sorted([H1 | T1], T2, Merged).
+
+
+%flow model(i,i,o)
+% Base case: An empty list returns the colector.
+merge_h([], C,C).
+% Case for merging two lists while removing duplicates.
+merge_h([H | T], C,R) :-
+    is_list(H),
+   	merge_sorted(H,C,NewC),
+    merge_h(T,NewC,R).
+
+% Case for handling non-list elements.
+merge_h([H | T], C,R) :-
+    \+ is_list(H),
+    merge_h(T, C,R).   %Skip the non-list element
+    

@@ -1,0 +1,72 @@
+USE [Psychology Center]
+GO
+
+create OR ALTER view view1 as
+	select * from COURSE
+Go
+
+create OR ALTER view view2 as 
+	select * from COURSE C
+	inner join SPECIALIZATION S
+	on C.Sid=S.SPECid
+GO
+
+create OR ALTER view view3 as 
+	SELECT C.CNmae,C.Price
+	FROM COURSE C
+	INNER JOIN SPECIALIZATION S 
+	ON S.SPECid=C.Sid
+	GROUP BY C.CNmae,C.Price
+GO
+
+CREATE OR ALTER PROCEDURE insertIntoTable @tablename Varchar(30),@noOfRows INT
+AS 
+BEGIN
+	DECLARE @CONTOR INT,@COMAND VARCHAR(300)
+	SET @CONTOR=0
+	WHILE @CONTOR<=@noOfRows
+	BEGIN
+		SET @COMAND='insert'+@tablename+' '+convert(varchar(10),@CONTOR)
+		EXEC (@COMAND)
+		SET @CONTOR=@CONTOR+1
+	END
+
+END
+GO
+
+CREATE OR ALTER PROCEDURE insertCOURSE @index INT
+AS 
+BEGIN
+	INSERT INTO COURSE(CSid,CNmae,Price,Sid) VALUES(@index,'CNAME'+CONVERT(VARCHAR(10),@index),200,@index)
+END
+GO
+
+CREATE OR ALTER PROCEDURE insertSPECIALIZATION @index INT
+AS
+BEGIN
+	INSERT INTO SPECIALIZATION(SPECid,SName,SDesc) VALUES(@index,'sname'+CONVERT(VARCHAR(10),@index),'sdesc'+CONVERT(varchar(10),@index))
+END
+GO
+
+CREATE OR ALTER PROCEDURE insertObtainedSpecialization @index INT
+AS 
+BEGIN
+	INSERT INTO ObtainedSpecialization(SPECid,Pid) VALUES(@index,@index)
+END
+GO
+
+CREATE OR ALTER PROCEDURE insertPSYCHOLOGIST @index INT
+AS
+BEGIN
+	INSERT INTO PSYCHOLOGIST(PsychologistID,FName,LName,DOB) VALUES(@index,'Fname'+CONVERT(VARCHAR(10),@index),'LNAME'+CONVERT(varchar(10),@index),'1987-3-23')
+
+END
+GO
+
+CREATE OR ALTER PROCEDURE clearTable @tableName VARCHAR(50) AS
+EXEC('DELETE FROM '+@tableName)
+GO
+CREATE OR ALTER PROCEDURE CREATETABLE @NAME VARCHAR(50) AS
+BEGIN
+	INSERT INTO Tests(Name) VALUES(@NAME)
+END

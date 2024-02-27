@@ -1,0 +1,1699 @@
+ID:12
+
+~ EXECUTION STACK ~
+Stack{stack=[CompStatement(int counter;While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}), Ref(int) a]}
+~ SYMBOL TABLE ~
+Dictionary{map={}}
+~ OUTPUT ~
+List{output=[]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:12
+
+~ EXECUTION STACK ~
+Stack{stack=[CompStatement(int counter;While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)})]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}}}
+~ OUTPUT ~
+List{output=[]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:12
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, int counter]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}}}
+~ OUTPUT ~
+List{output=[]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:12
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=0}}
+~ OUTPUT ~
+List{output=[]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:12
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=0}}
+~ OUTPUT ~
+List{output=[]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:12
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, counter=counter + 1, Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=0}}
+~ OUTPUT ~
+List{output=[]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:13
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, counter=counter + 1]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=0}}
+~ OUTPUT ~
+List{output=[]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:13
+
+~ EXECUTION STACK ~
+Stack{stack=[Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=0}}
+~ OUTPUT ~
+List{output=[]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:14
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=1}}
+~ OUTPUT ~
+List{output=[]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:14
+
+~ EXECUTION STACK ~
+Stack{stack=[]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=0}}
+~ OUTPUT ~
+List{output=[]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:14
+
+~ EXECUTION STACK ~
+Stack{stack=[CompStatement(New{a, counter};print(ReadHeap{a}))]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=0}}
+~ OUTPUT ~
+List{output=[]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:14
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=1}}
+~ OUTPUT ~
+List{output=[]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:14
+
+~ EXECUTION STACK ~
+Stack{stack=[print(ReadHeap{a}), New{a, counter}]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=0}}
+~ OUTPUT ~
+List{output=[]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:14
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, counter=counter + 1, Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=1}}
+~ OUTPUT ~
+List{output=[]}
+~ FILE TABLE~
+
+~ HEAP ~
+1 -> 0
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:14
+
+~ EXECUTION STACK ~
+Stack{stack=[print(ReadHeap{a})]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{1 -> int}, counter=0}}
+~ OUTPUT ~
+List{output=[]}
+~ FILE TABLE~
+
+~ HEAP ~
+1 -> 0
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:15
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, counter=counter + 1]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=1}}
+~ OUTPUT ~
+List{output=[0]}
+~ FILE TABLE~
+
+~ HEAP ~
+1 -> 0
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:15
+
+~ EXECUTION STACK ~
+Stack{stack=[]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{1 -> int}, counter=0}}
+~ OUTPUT ~
+List{output=[0]}
+~ FILE TABLE~
+
+~ HEAP ~
+1 -> 0
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:15
+
+~ EXECUTION STACK ~
+Stack{stack=[Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=1}}
+~ OUTPUT ~
+List{output=[0]}
+~ FILE TABLE~
+
+~ HEAP ~
+1 -> 0
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:16
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=2}}
+~ OUTPUT ~
+List{output=[0]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:16
+
+~ EXECUTION STACK ~
+Stack{stack=[]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=1}}
+~ OUTPUT ~
+List{output=[0]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:16
+
+~ EXECUTION STACK ~
+Stack{stack=[CompStatement(New{a, counter};print(ReadHeap{a}))]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=1}}
+~ OUTPUT ~
+List{output=[0]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:16
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=2}}
+~ OUTPUT ~
+List{output=[0]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:16
+
+~ EXECUTION STACK ~
+Stack{stack=[print(ReadHeap{a}), New{a, counter}]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=1}}
+~ OUTPUT ~
+List{output=[0]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:16
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, counter=counter + 1, Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=2}}
+~ OUTPUT ~
+List{output=[0]}
+~ FILE TABLE~
+
+~ HEAP ~
+2 -> 1
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:16
+
+~ EXECUTION STACK ~
+Stack{stack=[print(ReadHeap{a})]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{2 -> int}, counter=1}}
+~ OUTPUT ~
+List{output=[0]}
+~ FILE TABLE~
+
+~ HEAP ~
+2 -> 1
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:17
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, counter=counter + 1]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=2}}
+~ OUTPUT ~
+List{output=[0, 1]}
+~ FILE TABLE~
+
+~ HEAP ~
+2 -> 1
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:17
+
+~ EXECUTION STACK ~
+Stack{stack=[]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{2 -> int}, counter=1}}
+~ OUTPUT ~
+List{output=[0, 1]}
+~ FILE TABLE~
+
+~ HEAP ~
+2 -> 1
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:17
+
+~ EXECUTION STACK ~
+Stack{stack=[Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=2}}
+~ OUTPUT ~
+List{output=[0, 1]}
+~ FILE TABLE~
+
+~ HEAP ~
+2 -> 1
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:18
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=3}}
+~ OUTPUT ~
+List{output=[0, 1]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:18
+
+~ EXECUTION STACK ~
+Stack{stack=[]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=2}}
+~ OUTPUT ~
+List{output=[0, 1]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:18
+
+~ EXECUTION STACK ~
+Stack{stack=[CompStatement(New{a, counter};print(ReadHeap{a}))]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=2}}
+~ OUTPUT ~
+List{output=[0, 1]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:18
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=3}}
+~ OUTPUT ~
+List{output=[0, 1]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:18
+
+~ EXECUTION STACK ~
+Stack{stack=[print(ReadHeap{a}), New{a, counter}]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=2}}
+~ OUTPUT ~
+List{output=[0, 1]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:18
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, counter=counter + 1, Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=3}}
+~ OUTPUT ~
+List{output=[0, 1]}
+~ FILE TABLE~
+
+~ HEAP ~
+1 -> 2
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:18
+
+~ EXECUTION STACK ~
+Stack{stack=[print(ReadHeap{a})]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{1 -> int}, counter=2}}
+~ OUTPUT ~
+List{output=[0, 1]}
+~ FILE TABLE~
+
+~ HEAP ~
+1 -> 2
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:19
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, counter=counter + 1]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=3}}
+~ OUTPUT ~
+List{output=[0, 1, 2]}
+~ FILE TABLE~
+
+~ HEAP ~
+1 -> 2
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:19
+
+~ EXECUTION STACK ~
+Stack{stack=[]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{1 -> int}, counter=2}}
+~ OUTPUT ~
+List{output=[0, 1, 2]}
+~ FILE TABLE~
+
+~ HEAP ~
+1 -> 2
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:19
+
+~ EXECUTION STACK ~
+Stack{stack=[Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=3}}
+~ OUTPUT ~
+List{output=[0, 1, 2]}
+~ FILE TABLE~
+
+~ HEAP ~
+1 -> 2
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:20
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=4}}
+~ OUTPUT ~
+List{output=[0, 1, 2]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:20
+
+~ EXECUTION STACK ~
+Stack{stack=[]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=3}}
+~ OUTPUT ~
+List{output=[0, 1, 2]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:20
+
+~ EXECUTION STACK ~
+Stack{stack=[CompStatement(New{a, counter};print(ReadHeap{a}))]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=3}}
+~ OUTPUT ~
+List{output=[0, 1, 2]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:20
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=4}}
+~ OUTPUT ~
+List{output=[0, 1, 2]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:20
+
+~ EXECUTION STACK ~
+Stack{stack=[print(ReadHeap{a}), New{a, counter}]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=3}}
+~ OUTPUT ~
+List{output=[0, 1, 2]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:20
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, counter=counter + 1, Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=4}}
+~ OUTPUT ~
+List{output=[0, 1, 2]}
+~ FILE TABLE~
+
+~ HEAP ~
+2 -> 3
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:20
+
+~ EXECUTION STACK ~
+Stack{stack=[print(ReadHeap{a})]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{2 -> int}, counter=3}}
+~ OUTPUT ~
+List{output=[0, 1, 2]}
+~ FILE TABLE~
+
+~ HEAP ~
+2 -> 3
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:21
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, counter=counter + 1]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=4}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3]}
+~ FILE TABLE~
+
+~ HEAP ~
+2 -> 3
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:21
+
+~ EXECUTION STACK ~
+Stack{stack=[]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{2 -> int}, counter=3}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3]}
+~ FILE TABLE~
+
+~ HEAP ~
+2 -> 3
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:21
+
+~ EXECUTION STACK ~
+Stack{stack=[Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=4}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3]}
+~ FILE TABLE~
+
+~ HEAP ~
+2 -> 3
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:22
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=5}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:22
+
+~ EXECUTION STACK ~
+Stack{stack=[]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=4}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:22
+
+~ EXECUTION STACK ~
+Stack{stack=[CompStatement(New{a, counter};print(ReadHeap{a}))]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=4}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:22
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=5}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:22
+
+~ EXECUTION STACK ~
+Stack{stack=[print(ReadHeap{a}), New{a, counter}]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=4}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:22
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, counter=counter + 1, Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=5}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3]}
+~ FILE TABLE~
+
+~ HEAP ~
+1 -> 4
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:22
+
+~ EXECUTION STACK ~
+Stack{stack=[print(ReadHeap{a})]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{1 -> int}, counter=4}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3]}
+~ FILE TABLE~
+
+~ HEAP ~
+1 -> 4
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:23
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, counter=counter + 1]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=5}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4]}
+~ FILE TABLE~
+
+~ HEAP ~
+1 -> 4
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:23
+
+~ EXECUTION STACK ~
+Stack{stack=[]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{1 -> int}, counter=4}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4]}
+~ FILE TABLE~
+
+~ HEAP ~
+1 -> 4
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:23
+
+~ EXECUTION STACK ~
+Stack{stack=[Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=5}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4]}
+~ FILE TABLE~
+
+~ HEAP ~
+1 -> 4
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:24
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=6}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:24
+
+~ EXECUTION STACK ~
+Stack{stack=[]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=5}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:24
+
+~ EXECUTION STACK ~
+Stack{stack=[CompStatement(New{a, counter};print(ReadHeap{a}))]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=5}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:24
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=6}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:24
+
+~ EXECUTION STACK ~
+Stack{stack=[print(ReadHeap{a}), New{a, counter}]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=5}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:24
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, counter=counter + 1, Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=6}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4]}
+~ FILE TABLE~
+
+~ HEAP ~
+2 -> 5
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:24
+
+~ EXECUTION STACK ~
+Stack{stack=[print(ReadHeap{a})]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{2 -> int}, counter=5}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4]}
+~ FILE TABLE~
+
+~ HEAP ~
+2 -> 5
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:25
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, counter=counter + 1]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=6}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5]}
+~ FILE TABLE~
+
+~ HEAP ~
+2 -> 5
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:25
+
+~ EXECUTION STACK ~
+Stack{stack=[]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{2 -> int}, counter=5}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5]}
+~ FILE TABLE~
+
+~ HEAP ~
+2 -> 5
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:25
+
+~ EXECUTION STACK ~
+Stack{stack=[Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=6}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5]}
+~ FILE TABLE~
+
+~ HEAP ~
+2 -> 5
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:26
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=7}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:26
+
+~ EXECUTION STACK ~
+Stack{stack=[]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=6}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:26
+
+~ EXECUTION STACK ~
+Stack{stack=[CompStatement(New{a, counter};print(ReadHeap{a}))]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=6}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:26
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=7}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:26
+
+~ EXECUTION STACK ~
+Stack{stack=[print(ReadHeap{a}), New{a, counter}]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=6}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:26
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, counter=counter + 1, Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=7}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5]}
+~ FILE TABLE~
+
+~ HEAP ~
+1 -> 6
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:26
+
+~ EXECUTION STACK ~
+Stack{stack=[print(ReadHeap{a})]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{1 -> int}, counter=6}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5]}
+~ FILE TABLE~
+
+~ HEAP ~
+1 -> 6
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:27
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, counter=counter + 1]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=7}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6]}
+~ FILE TABLE~
+
+~ HEAP ~
+1 -> 6
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:27
+
+~ EXECUTION STACK ~
+Stack{stack=[]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{1 -> int}, counter=6}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6]}
+~ FILE TABLE~
+
+~ HEAP ~
+1 -> 6
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:27
+
+~ EXECUTION STACK ~
+Stack{stack=[Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=7}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6]}
+~ FILE TABLE~
+
+~ HEAP ~
+1 -> 6
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:28
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=8}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:28
+
+~ EXECUTION STACK ~
+Stack{stack=[]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=7}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:28
+
+~ EXECUTION STACK ~
+Stack{stack=[CompStatement(New{a, counter};print(ReadHeap{a}))]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=7}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:28
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=8}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:28
+
+~ EXECUTION STACK ~
+Stack{stack=[print(ReadHeap{a}), New{a, counter}]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=7}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:28
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, counter=counter + 1, Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=8}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6]}
+~ FILE TABLE~
+
+~ HEAP ~
+2 -> 7
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:28
+
+~ EXECUTION STACK ~
+Stack{stack=[print(ReadHeap{a})]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{2 -> int}, counter=7}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6]}
+~ FILE TABLE~
+
+~ HEAP ~
+2 -> 7
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:29
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, counter=counter + 1]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=8}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6, 7]}
+~ FILE TABLE~
+
+~ HEAP ~
+2 -> 7
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:29
+
+~ EXECUTION STACK ~
+Stack{stack=[]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{2 -> int}, counter=7}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6, 7]}
+~ FILE TABLE~
+
+~ HEAP ~
+2 -> 7
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:29
+
+~ EXECUTION STACK ~
+Stack{stack=[Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=8}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6, 7]}
+~ FILE TABLE~
+
+~ HEAP ~
+2 -> 7
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:30
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=9}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6, 7]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:30
+
+~ EXECUTION STACK ~
+Stack{stack=[]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=8}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6, 7]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:30
+
+~ EXECUTION STACK ~
+Stack{stack=[CompStatement(New{a, counter};print(ReadHeap{a}))]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=8}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6, 7]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:30
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=9}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6, 7]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:30
+
+~ EXECUTION STACK ~
+Stack{stack=[print(ReadHeap{a}), New{a, counter}]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=8}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6, 7]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:30
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, counter=counter + 1, Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=9}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6, 7]}
+~ FILE TABLE~
+
+~ HEAP ~
+1 -> 8
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:30
+
+~ EXECUTION STACK ~
+Stack{stack=[print(ReadHeap{a})]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{1 -> int}, counter=8}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6, 7]}
+~ FILE TABLE~
+
+~ HEAP ~
+1 -> 8
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:31
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}, counter=counter + 1]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=9}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6, 7, 8]}
+~ FILE TABLE~
+
+~ HEAP ~
+1 -> 8
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:31
+
+~ EXECUTION STACK ~
+Stack{stack=[]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{1 -> int}, counter=8}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6, 7, 8]}
+~ FILE TABLE~
+
+~ HEAP ~
+1 -> 8
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:31
+
+~ EXECUTION STACK ~
+Stack{stack=[Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=9}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6, 7, 8]}
+~ FILE TABLE~
+
+~ HEAP ~
+1 -> 8
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:32
+
+~ EXECUTION STACK ~
+Stack{stack=[While(counter<10){
+CompStatement(Fork{Fork{CompStatement(New{a, counter};print(ReadHeap{a}))}
+}
+;counter=counter + 1)}]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=10}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6, 7, 8]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:32
+
+~ EXECUTION STACK ~
+Stack{stack=[]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=9}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6, 7, 8]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:32
+
+~ EXECUTION STACK ~
+Stack{stack=[CompStatement(New{a, counter};print(ReadHeap{a}))]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=9}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6, 7, 8]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:32
+
+~ EXECUTION STACK ~
+Stack{stack=[]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=10}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6, 7, 8]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:32
+
+~ EXECUTION STACK ~
+Stack{stack=[print(ReadHeap{a}), New{a, counter}]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{0 -> int}, counter=9}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6, 7, 8]}
+~ FILE TABLE~
+
+~ HEAP ~
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:32
+
+~ EXECUTION STACK ~
+Stack{stack=[print(ReadHeap{a})]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{2 -> int}, counter=9}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6, 7, 8]}
+~ FILE TABLE~
+
+~ HEAP ~
+2 -> 9
+
+~ LATCH TABLE ~
+Dictionary{map={}}
+ID:32
+
+~ EXECUTION STACK ~
+Stack{stack=[]}
+~ SYMBOL TABLE ~
+Dictionary{map={a=ReferenceValue{2 -> int}, counter=9}}
+~ OUTPUT ~
+List{output=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]}
+~ FILE TABLE~
+
+~ HEAP ~
+2 -> 9
+
+~ LATCH TABLE ~
+Dictionary{map={}}

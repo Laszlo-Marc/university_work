@@ -1,0 +1,34 @@
+(defun node-member-p (node tree)
+  "Check if a node is a member of an n-tree."
+  (or (equal node (car tree))
+      (some #'(lambda (subtree) (node-member-p node subtree)) (cdr tree))))
+
+(defun ntree-member-p (node ntree)
+  "Check if a node is a member of an n-tree represented as (root list_of_nodes_subtree1 ... list_of_nodes_subtreen)."
+  (if (node-member-p node ntree)
+      t
+      (some #'(lambda (subtree) (ntree-member-p node subtree)) (cdr ntree))))
+
+;; Example usage:
+(setq example-ntree '(a (b (c)) (d) (e (f))))
+
+;; Test case
+(format t "Is 'b' a member of the n-tree? ~a~%" (ntree-member-p 'b example-ntree)) ; Output: T
+(format t "Is 'x' a member of the n-tree? ~a~%" (ntree-member-p 'x example-ntree)) ; Output: NIL
+
+node-member-p(node,tree)={ 
+equal(node,car(tree)),if atom(tree)
+some(λ(subtree)node-member-p(node,subtree),cdr(tree)),otherwise
+
+​ntree-member-p(node,ntree)={ 
+node-member-p(node,ntree),if atom(ntree)
+some(λ(subtree)ntree-member-p(node,subtree),cdr(ntree)),otherwise
+​
+  
+
+
+​
+
+  
+​
+ 

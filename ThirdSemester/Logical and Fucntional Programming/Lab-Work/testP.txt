@@ -1,0 +1,11 @@
+gcd(X, 0, X). % GCD of X and 0 is X.
+gcd(X, Y, GCD) :- Y > 0, Z is X mod Y, gcd(Y, Z, GCD).
+% GCD of X and Y, where Y is greater than 0, is the same as GCD of Y and X mod Y.
+
+
+gcd_of_list([], 0). % The GCD of an empty list is 0.
+gcd_of_list([X], X). % The GCD of a list with a single element is that element.
+gcd_of_list([H|T], GCD) :-
+    gcd_of_list(T, TempGCD), % Recursively find the GCD of the tail of the list.
+    gcd(H, TempGCD, GCD).
+    %Find the gcd between the current element and the temporary gcd

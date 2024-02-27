@@ -1,0 +1,18 @@
+
+ (defun inorder (tree)
+  (cond
+   ((null tree) '())
+   ((atom tree) (list tree))
+   ((numberp (car tree)) (inorder (cdr tree)))
+   (t (append (inorder (car tree))
+              (inorder (cdr tree))))))
+
+;; Example usage:
+;; (setq example-tree '(A (B) (C (D) (E)))) ;; 
+
+(print (inorder example-tree))
+
+
+inorder(nil) = [] (an empty tree has an empty traversal).
+inorder(atom) = [atom] (a leaf node has a traversal containing only itself).
+inorder((value, left_subtree, right_subtree)) = inorder(left_subtree) + [value] + inorder(right_subtree) (for non-empty nodes, concatenate the traversals of the left subtree, the value of the current node, and the traversals of the right subtree)

@@ -1,0 +1,25 @@
+% Predicate to find the last occurrences of elements in a list.
+last_occurrences([], []). % Base case: An empty list has no last occurrences.
+last_occurrences([H|T], Result) :-
+    last_occurrences(T, TmpResult), % Recursively find last occurrences in the tail of the list.
+    (member(H, TmpResult) -> Result = TmpResult ; Result = [H|TmpResult]).
+    % If H is already in TmpResult, don't add it to Result.
+    % Otherwise, add H to Result to preserve the last occurrence.
+
+% Predicate to transform a list into a set, preserving the order of the last occurrences.
+transform_list_to_set(L, S) :- 
+    reverse(L, ReversedL), % Reverse the input list.
+    last_occurrences(ReversedL, S). % Find last occurrences in the reversed list.
+
+% Predicate to calculate the greatest common divisor (GCD) of two numbers.
+gcd(X, 0, X). % GCD of X and 0 is X.
+gcd(X, Y, GCD) :- Y > 0, Z is X mod Y, gcd(Y, Z, GCD).
+% GCD of X and Y, where Y is greater than 0, is the same as GCD of Y and X mod Y.
+
+% Predicate to calculate the GCD of all numbers in a list.
+list_gcd([], 0). % The GCD of an empty list is 0.
+list_gcd([X], X). % The GCD of a list with a single element is that element.
+list_gcd([H|T], GCD) :-
+    list_gcd(T, TempGCD), % Recursively find the GCD of the tail of the list.
+    gcd(H, TempGCD, GCD).
+    % Calculate the GCD of the current element H and the temporary GCD (TempGCD).

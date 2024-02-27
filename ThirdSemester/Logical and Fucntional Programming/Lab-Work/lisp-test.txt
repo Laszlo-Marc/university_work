@@ -1,0 +1,13 @@
+ (defun non-numerical-atoms-reverse (lst)
+  (if (null lst)
+      nil
+      (append (non-numerical-atoms-reverse (cdr lst))
+              (if (atom (car lst))
+                  (if (not (numberp (car lst)))
+                      (list (car lst))
+                      nil)
+                  (non-numerical-atoms-reverse (car lst))))))
+
+ (setq example-list '(((A B) 2 C) 3 (D 1 E)))
+
+(non-numerical-atoms-reverse example-list)
