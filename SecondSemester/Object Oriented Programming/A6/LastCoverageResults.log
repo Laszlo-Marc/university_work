@@ -1,0 +1,21 @@
+[2023-05-04 10:09:39] [info] Start Program:
+Path:"C:\Users\marcl\source\OOP Materials\cs-ubbcluj-ro\a6-914-Laszlo-Marc\x64\Debug\a6-3.exe"
+Arguments:
+Working directory: "C:\Users\marcl\source\OOP Materials\cs-ubbcluj-ro\a6-914-Laszlo-Marc\"
+Modules: Selected: C:\Users\marcl\source\OOP Materials\cs-ubbcluj-ro\a6-914-Laszlo-Marc\x64\Debug\a6-3.exe Excluded: 
+Sources: Selected: C:\Users\marcl\source\OOP Materials\cs-ubbcluj-ro\a6-914-Laszlo-Marc Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\marcl\AppData\Local\Temp\e2uyk0ll.c5w 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2023-05-04 10:09:39] [info] Module: C:\Users\marcl\source\OOP Materials\cs-ubbcluj-ro\a6-914-Laszlo-Marc\x64\Debug\a6-3.exe is selected because it matches selected pattern: C:\Users\marcl\source\OOP Materials\cs-ubbcluj-ro\a6-914-Laszlo-Marc\x64\Debug\a6-3.exe
+[2023-05-04 10:09:39] [info] ----------------------------------------------------
+[2023-05-04 10:09:39] [info] Coverage binary generated in file: C:\Users\marcl\AppData\Local\Temp\e2uyk0ll.c5w
+[2023-05-04 10:09:39] [info] ----------------------------------------------------
