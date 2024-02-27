@@ -1,0 +1,14 @@
+Java Tutorial for Beginners: Object-Oriented Programming |Derek Banas|1|35|45|https://www.youtube.com/watch?v=kJzB8DvH5Oc|130000
+Python Tutorial: Object-Oriented Programming|Derek Banas|1|10|14|https://www.youtube.com/watch?v=5-daZoKgUcA|6100000
+C++ Tutorial: Object-Oriented Programming|Derek Banas|1|49|56|https://www.youtube.com/watch?v=Rub-JsjMhWY |140000
+JavaScript Tutorial: Object-Oriented Programming|Derek Banas|1|17|13|https://www.youtube.com/watch?v=PFmuCDHHpwk|14000
+Python OOP Tutorial: Classes and Objects|Corey Schafer|1|12|8|https://www.youtube.com/watch?v=ZDa-Z5JzLYM|110000
+Python OOP Tutorial: Inheritance|Corey Schafer|1|2|9|https://www.youtube.com/watch?v=RSl87lqOXDE|70000
+Python OOP Tutorial: Special (Magic/Dunder) Methods|Corey Schafer|0|55|5|https://www.youtube.com/watch?v=3ohzBxoFHAY|800000
+Python OOP Tutorial: Special (Magic/Dunder) Methods|Corey Schafer|0|55|5|https://www.youtube.com/watch?v=3ohzBxoFHAY|800000
+C# OOP Tutorial - Object Oriented Programming|Mosh Hamedani|2|6|10|https://www.youtube.com/watch?v=HF1luRD4Qmk|199001
+C# Tutorial for Beginners: Learn C# from Scratch|Mosh Hamedani|6|2|12|https://www.youtube.com/watch?v=gfkTfcpWqAY|29990
+Python OOP Tutorial: Object Oriented Programming for Beginners|Mosh Hamedani|1|33|0|https://www.youtube.com/watch?v=JeznW_7DlB0|299900
+Java Tutorial for Beginners: Learn Java Programming|Mosh Hamedani|4|57|0|https://www.youtube.com/watch?v=eIrMbAQSU34|384824
+Java OOP Tutorial - Part 1 - Object Oriented Programming Tutorial for Beginners - Java Training|Telusko|1|41|0|https://www.youtube.com/watch?v=kgJskQgFSck|12842
+Java OOP Tutorial - Part 2 - Abstraction and Encapsulation in Java - Java Tutorial for Beginners|Telusko|0|43|0|https://www.youtube.com/watch?v=zH9gK7VJuLw|420424

@@ -1,0 +1,4 @@
+C# Tutorial for Beginners: Learn C# from Scratch|Mosh Hamedani|6|2|12|https://www.youtube.com/watch?v=gfkTfcpWqAY|29990
+Python OOP Tutorial: Object Oriented Programming for Beginners|Mosh Hamedani|1|33|0|https://www.youtube.com/watch?v=JeznW_7DlB0|299900
+Java Tutorial for Beginners: Learn Java Programming|Mosh Hamedani|4|57|0|https://www.youtube.com/watch?v=eIrMbAQSU34|384824
+C++ with Marc|Marc|12|34|45|https://www.youtube.com/watch?v=HF1luRD4Qmk|1230000
