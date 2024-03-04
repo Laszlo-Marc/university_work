@@ -18,5 +18,5 @@
 ## Semester 3
 - 🔋 [Advanced Programming Methods](./ThirdSemester/Advanced%20Programming%20Methods)
 - 🔑 [Databases](./ThirdSemester/Databases)
-- 📟 [Logical & Functional Programming](./ThirdSemester/Logical%20%26%20Functional%20Programming)
-- 📊 [Probabilities & Statistics](./ThirdSemester/Probabilities%20%26%20Statistics)
+- 📟 [Logical & Functional Programming](./ThirdSemester/Logical%20and%20Functional%20Programming)
+- 📊 [Probabilities & Statistics](./ThirdSemester/Probabilities%20and%20Statistics)
