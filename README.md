@@ -4,7 +4,7 @@
 ## Semester 1
 - 📐 [Algebra](./FirstSemester/Algebra)
 - 🧠 [Computational Logic](./FirstSemester/Computational%20Logic)
-- 🖥️ [Computer Systems Architecture](./FirstSemester/Computer%20System%20Architecture)
+- 🖥️ [Computer Systems Architecture](./FirstSemester/Computer%20System%20Arhitecture)
 - 🕹️ [Fundamentals of Programming](./FirstSemester/Fundamentals%20of%20Programming)
 - 📈 [Mathematical Analysis](./FirstSemester/Mathematical%20Analysis)
 
