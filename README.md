@@ -3,10 +3,10 @@
 
 ## Semester 1
 - 📐 [Algebra](./FirstSemester/Algebra)
-- 🧠 [Computational Logic](./FisrtSemester/Computational%20Logic)
-- 🖥️ [Computer Systems Architecture](./FisrtSemester/Computer%20System%20Architecture)
-- 🕹️ [Fundamentals of Programming](./FisrtSemester/Fundamentals%20of%20Programming)
-- 📈 [Mathematical Analysis](./FisrtSemester/Mathematical%20Analysis)
+- 🧠 [Computational Logic](./FirstSemester/Computational%20Logic)
+- 🖥️ [Computer Systems Architecture](./FirstSemester/Computer%20System%20Architecture)
+- 🕹️ [Fundamentals of Programming](./FirstSemester/Fundamentals%20of%20Programming)
+- 📈 [Mathematical Analysis](./FirstSemester/Mathematical%20Analysis)
 
 ## Semester 2
 - ⚒️ [Data Structures & Algorithms](./SecondSemester/Data%20Structures%20%26%20Algorithms)
