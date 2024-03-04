@@ -11,7 +11,7 @@
 ## Semester 2
 - ⚒️ [Data Structures](./SecondSemester/DataStructures)
 - ⚖️ [Geometry](./SecondSemester/Geometry)
-- 🧩 [Graph Algorithms](.SecondSemester/GraphAlgorithms)
+- 🧩 [Graph Algorithms](./SecondSemester/GraphAlgorithms)
 - 🖱️ [Object Oriented Programming](./SecondSemester/Object%20Oriented%20Programming)
 - 💾 [Operating Systems](./SecondSemester/Operating%20Systems)
 
