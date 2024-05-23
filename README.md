@@ -20,3 +20,7 @@
 - 🔑 [Databases](./ThirdSemester/Databases)
 - 📟 [Logical & Functional Programming](./ThirdSemester/Logical%20and%20Functional%20Programming)
 - 📊 [Probabilities & Statistics](./ThirdSemester/Probabilities%20and%20Statistics)
+## Semester 4
+- 🕸️ [Web Programming](./FourthSemester/Web%20Programming)
+- 🔑 [Databases Management Systems](./FourthSemester/Databases%20Management%20Systems)
+- 🤖 [AI](./FourthSemester/AI)
