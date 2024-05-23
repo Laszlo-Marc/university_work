@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Double Click to Move Items</title>
+    <style>
+      select {
+        width: 150px;
+        height: 200px;
+        border: 1px solid #ccc;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Double Click to Move Items</h2>
+    <select id="list1" multiple ondblclick="moveItem('list1', 'list2')">
+      <option value="item1">Item 1</option>
+      <option value="item2">Item 2</option>
+      <option value="item3">Item 3</option>
+      <option value="item4">Item 4</option>
+    </select>
+    <select id="list2" multiple ondblclick="moveItem('list2', 'list1')">
+      <option value="item5">Item 5</option>
+      <option value="item6">Item 6</option>
+      <option value="item7">Item 7</option>
+      <option value="item8">Item 8</option>
+    </select>
+
+    <script>
+      function moveItem(sourceId, targetId) {
+        var source = document.getElementById(sourceId);
+        var target = document.getElementById(targetId);
+        var selectedOption = source.options[source.selectedIndex];
+        target.appendChild(selectedOption);
+      }
+    </script>
+  </body>
+</html>

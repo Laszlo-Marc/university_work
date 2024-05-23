@@ -1,0 +1,59 @@
+<!-- login.component.html -->
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Login</h2>
+  <form (ngSubmit)="login()" #loginForm="ngForm">
+    <div class="mb-3">
+      <label for="email" class="form-label">Email:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="email"
+        placeholder="Enter email"
+        name="email"
+        [(ngModel)]="email"
+        required
+        email
+        #emailInput="ngModel"
+      />
+      <div *ngIf="emailInput.invalid && emailInput.touched" class="text-danger">
+        <div *ngIf="emailInput.errors?.['required']">Email is required.</div>
+        <div *ngIf="emailInput.errors?.['email']">Invalid email address.</div>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password:</label>
+      <input
+        type="password"
+        class="form-control"
+        id="password"
+        placeholder="Enter password"
+        name="password"
+        [(ngModel)]="password"
+        required
+        minlength="6"
+        autocomplete="off"
+        #passwordInput="ngModel"
+      />
+      <div
+        *ngIf="passwordInput.invalid && passwordInput.touched"
+        class="text-danger"
+      >
+        <div *ngIf="passwordInput.errors?.['required']">
+          Password is required.
+        </div>
+        <div *ngIf="passwordInput.errors?.['minlength']">
+          Password must be at least 6 characters long.
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <button type="submit" class="btn btn-primary">Login</button>
+      <button type="button" class="btn btn-secondary" (click)="cancel()">
+        Cancel
+      </button>
+    </div>
+    <div *ngIf="errorMessage" class="text-danger mt-3 text-center">
+      {{ errorMessage }}
+    </div>
+  </form>
+</div>

@@ -1,0 +1,79 @@
+<div class="container" id="removeFormDiv">
+  <div class="col">
+    <div
+      class="col-sm d-flex flex-wrap justify-content-between align-items-end"
+    >
+      <div class="container" id="showEntries">
+        <h3>You can remove one of the following entries:</h3>
+        <div class="table-responsive">
+          <table class="entryTable table table-striped table-hover">
+            <thead class="table-dark">
+              <tr>
+                <th>ID</th>
+                <th>Email</th>
+                <th>Title</th>
+                <th>Comment</th>
+                <th>Date</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let entry of entries">
+                <td>{{ entry.id }}</td>
+                <td>{{ entry.author_email }}</td>
+                <td>{{ entry.title }}</td>
+                <td>{{ entry.comment }}</td>
+                <td>{{ entry.date }}</td>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-danger"
+                    (click)="removeEntry(entry.id)"
+                  >
+                    Remove
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="d-flex justify-content-between mt-4">
+          <button
+            type="button"
+            class="btn btn-primary mb-1"
+            (click)="previousPage()"
+            [disabled]="isPreviousDisabled"
+          >
+            Previous
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary mb-1"
+            (click)="nextPage()"
+            [disabled]="isNextDisabled"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm text-center mt-4">
+      <button
+        type="button"
+        class="btn btn-primary mb-1"
+        name="viewAllButton"
+        (click)="viewAllEntries()"
+      >
+        View all entries
+      </button>
+      <button
+        type="submit"
+        class="btn btn-secondary mb-1"
+        name="returnButton"
+        (click)="returnToProfile()"
+      >
+        Return to profile
+      </button>
+    </div>
+  </div>
+</div>

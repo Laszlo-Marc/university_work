@@ -1,0 +1,104 @@
+<!-- add-entries.component.html -->
+<div class="container" id="addFormDiv">
+  <div class="row">
+    <div class="col-sm">
+      <div id="showLogs" class="container p-4 border rounded bg-light">
+        <h3>You have added the following entries:</h3>
+        <table class="entryTable table table-striped table-hover">
+          <thead class="table-dark">
+            <tr>
+              <th>ID</th>
+              <th>Email</th>
+              <th>Title</th>
+              <th>Comment</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let entry of entries">
+              <td>{{ entry.id }}</td>
+              <td>{{ entry.author_email }}</td>
+              <td>{{ entry.title }}</td>
+              <td>{{ entry.comment }}</td>
+              <td>{{ entry.date }}</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="d-flex justify-content-between">
+          <button
+            type="button"
+            id="previousButton"
+            class="btn btn-primary mb-1"
+            (click)="previousPage()"
+            [disabled]="isPreviousDisabled"
+          >
+            Previous
+          </button>
+          <button
+            id="nextButton"
+            type="button"
+            class="btn btn-primary mb-1"
+            (click)="nextPage()"
+            [disabled]="isNextDisabled"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div id="addForm" class="container text-left">
+        <h3>Add a new entry:</h3>
+        <div class="mb-1">
+          <label for="titleField" class="form-label">Title: </label>
+          <input
+            type="text"
+            id="titleField"
+            class="form-control"
+            [(ngModel)]="title"
+          />
+        </div>
+        <div class="mb-1">
+          <label for="commentField" class="form-label">Comment: </label>
+          <input
+            type="text"
+            id="commentField"
+            class="form-control"
+            [(ngModel)]="comment"
+          />
+        </div>
+        <div class="mb-1">
+          <label for="dateField" class="form-label">Date: </label>
+          <input
+            type="date"
+            id="dateField"
+            class="form-control"
+            [(ngModel)]="date"
+          />
+        </div>
+        <button
+          id="insertEntryButton"
+          type="button"
+          class="btn btn-success mb-1"
+          (click)="insertEntry()"
+        >
+          Add Entry
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary mb-1"
+          (click)="viewAllEntries()"
+        >
+          View all entries
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary mb-1"
+          (click)="returnToProfile()"
+        >
+          Return to profile
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

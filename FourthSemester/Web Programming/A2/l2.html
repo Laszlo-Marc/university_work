@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transitioning Divs</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+      }
+
+      @keyframes move1 {
+        0% {
+          top: 50%;
+          left: 50%;
+        }
+
+        100% {
+          top: 0%;
+          left: 0%;
+        }
+      }
+      @keyframes move2 {
+        0% {
+          top: 50%;
+          right: 50%;
+        }
+
+        100% {
+          top: 0%;
+          right: 0%;
+        }
+      }
+
+      @keyframes move3 {
+        0% {
+          bottom: 50%;
+          right: 50%;
+        }
+
+        100% {
+          bottom: 0%;
+          right: 0%;
+        }
+      }
+      @keyframes move4 {
+        0% {
+          bottom: 50%;
+          left: 50%;
+        }
+
+        100% {
+          bottom: 0%;
+          left: 0%;
+        }
+      }
+
+      .container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+      }
+      .box1,
+      .box2,
+      .box3,
+      .box4 {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+      }
+      .box1 {
+        background: rgb(255, 251, 0);
+      }
+      .box2 {
+        background: rgb(81, 255, 0);
+      }
+      .box3 {
+        background: rgb(0, 255, 255);
+      }
+      .box4 {
+        background: rgb(174, 0, 255);
+      }
+      .container:hover .box1 {
+        animation: move1 5s;
+      }
+      .container:hover .box2 {
+        animation: move2 5s;
+      }
+      .container:hover .box3 {
+        animation: move3 5s;
+      }
+      .container:hover .box4 {
+        animation: move4 5s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <div class="box4"></div>
+    </div>
+  </body>
+</html>

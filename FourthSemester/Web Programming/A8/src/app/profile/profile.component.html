@@ -1,0 +1,44 @@
+<div class="container text-center">
+  <h3>Welcome, {{ username }}!</h3>
+
+  <button
+    type="submit"
+    class="btn btn-primary"
+    name="viewAllButton"
+    (click)="viewAllEntries()"
+  >
+    View all entries
+  </button>
+  <button
+    type="submit"
+    class="btn btn-success"
+    name="addEntryButton"
+    (click)="addEntry()"
+  >
+    Add an entry
+  </button>
+  <button
+    type="submit"
+    class="btn btn-danger"
+    name="removeEntryButton"
+    (click)="removeEntry()"
+  >
+    Remove an entry
+  </button>
+  <button
+    type="submit"
+    class="btn btn-success"
+    name="updateEntryButton"
+    (click)="updateEntry()"
+  >
+    Update an entry
+  </button>
+  <button
+    type="submit"
+    class="btn btn-dark"
+    name="logoutButton"
+    (click)="logout()"
+  >
+    Log out
+  </button>
+</div>

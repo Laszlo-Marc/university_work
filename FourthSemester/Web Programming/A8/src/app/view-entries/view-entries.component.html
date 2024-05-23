@@ -1,0 +1,119 @@
+<div class="container mt-5" id="viewEntriesDiv">
+  <div class="row">
+    <div class="row-md-6">
+      <div id="showEntries" class="p-4 border rounded bg-light">
+        <h3 class="text-center mb-4">All the Entries in the System</h3>
+        <table class="entryTable table table-striped table-hover">
+          <thead class="table-dark">
+            <tr>
+              <th>ID</th>
+              <th>Email</th>
+              <th>Title</th>
+              <th>Comment</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let entry of entries">
+              <td>{{ entry.id }}</td>
+              <td>{{ entry.author_email }}</td>
+              <td>{{ entry.title }}</td>
+              <td>{{ entry.comment }}</td>
+              <td>{{ entry.date }}</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="d-flex justify-content-between">
+          <button
+            type="button"
+            id="previousButton"
+            class="btn btn-primary mb-1"
+            [disabled]="isPreviousDisabled"
+            (click)="previousPage()"
+          >
+            Previous
+          </button>
+          <button
+            id="nextButton"
+            type="button"
+            class="btn btn-primary mb-1"
+            [disabled]="isNextDisabled"
+            (click)="nextPage()"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="row-md-6">
+      <div id="buttons" class="mb-4 p-4 border rounded bg-light">
+        <h3 class="text-center mb-4">Filter Entries</h3>
+        <div id="filterByAuthor" class="mb-3">
+          <label for="authorInputFilter" class="form-label">Author:</label>
+          <input
+            type="text"
+            id="authorInputFilter"
+            class="form-control mb-3"
+            [(ngModel)]="authorFilter"
+          />
+          <button
+            id="filterByAuthorButton"
+            type="button"
+            class="btn btn-primary w-100"
+            (click)="filterByAuthor()"
+          >
+            Search by Author
+          </button>
+        </div>
+        <div id="filterByTitle" class="mb-3">
+          <label for="titleInputFilter" class="form-label">Title:</label>
+          <input
+            type="text"
+            id="titleInputFilter"
+            class="form-control mb-3"
+            [(ngModel)]="titleFilter"
+          />
+          <button
+            id="filterByTitleButton"
+            type="button"
+            class="btn btn-primary w-100"
+            (click)="filterByTitle()"
+          >
+            Search by Title
+          </button>
+        </div>
+        <div class="mb-3">
+          <button
+            id="filterByUserButton"
+            type="button"
+            class="btn btn-primary w-100 mb-2"
+            (click)="filterByUser()"
+          >
+            Show My Entries
+          </button>
+          <button
+            id="allEntriesButton"
+            type="button"
+            class="btn btn-primary w-100"
+            (click)="getAllEntries()"
+          >
+            Show All Entries
+          </button>
+        </div>
+        <div class="text-center">
+          <form (submit)="returnToProfile()">
+            <input
+              id="returnButton"
+              type="submit"
+              class="btn btn-secondary w-100"
+              name="returnButton"
+              value="Return to Profile"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

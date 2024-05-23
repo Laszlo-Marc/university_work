@@ -1,0 +1,116 @@
+<div class="container" id="updateFormDiv">
+  <div class="col">
+    <div
+      class="col-sm d-flex flex-wrap justify-content-between align-items-end"
+    >
+      <div class="container" id="showEntries">
+        <h3>You can modify the following entries:</h3>
+        <div class="table-responsive">
+          <table class="entryTable table table-striped table-hover">
+            <thead class="table-dark">
+              <tr>
+                <th>ID</th>
+                <th>Email</th>
+                <th>Title</th>
+                <th>Comment</th>
+                <th>Date</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let entry of entries">
+                <td>{{ entry.id }}</td>
+                <td>{{ entry.author_email }}</td>
+                <td>{{ entry.title }}</td>
+                <td>{{ entry.comment }}</td>
+                <td>{{ entry.date }}</td>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    (click)="openUpdateForm(entry)"
+                  >
+                    Update
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="d-flex justify-content-between mt-4">
+            <button
+              type="button"
+              class="btn btn-primary mb-1"
+              (click)="previousPage()"
+              [disabled]="isPreviousDisabled"
+            >
+              Previous
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary mb-1"
+              (click)="nextPage()"
+              [disabled]="isNextDisabled"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div id="updateForm" class="container text-left">
+          <h3>Modify an entry:</h3>
+          <div class="mb-1">
+            <label for="titleField" class="form-label">New title:</label>
+            <input
+              type="text"
+              id="titleField"
+              class="form-control"
+              [(ngModel)]="selectedEntry.title"
+            />
+          </div>
+          <div class="mb-1">
+            <label for="commentField" class="form-label">New comment:</label>
+            <input
+              type="text"
+              id="commentField"
+              class="form-control"
+              [(ngModel)]="selectedEntry.comment"
+            />
+          </div>
+          <div class="mb-1">
+            <label for="dateField" class="form-label">New date:</label>
+            <input
+              type="date"
+              id="dateField"
+              class="form-control"
+              [(ngModel)]="selectedEntry.date"
+            />
+          </div>
+          <button
+            id="updateEntryButton"
+            type="button"
+            class="btn btn-success mb-1"
+            (click)="updateEntry()"
+          >
+            Update Entry
+          </button>
+
+          <button
+            type="button"
+            class="btn btn-primary mb-1"
+            (click)="viewAllEntries()"
+          >
+            View all entries
+          </button>
+          <button
+            type="button"
+            class="btn btn-secondary mb-1"
+            (click)="returnToProfile()"
+          >
+            Return to profile
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
