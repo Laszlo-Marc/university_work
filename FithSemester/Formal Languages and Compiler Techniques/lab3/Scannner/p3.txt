@@ -1,0 +1,19 @@
+int @n, @i, @sum, @num, @max, @min;
+R(@n);
+@sum = 0;
+R(@num);
+@max = @num;
+@min = @num;
+@sum += @num;
+@i=1
+while (@i<=@n) execute {
+    R(@num);
+    @sum += @num;
+    @max = (@num > @max) ? @num : @max;
+    @min = (@num < @min) ? @num : @min;
+    @i+=1
+}
+W(@sum);
+W(@max);
+W(@min);
+

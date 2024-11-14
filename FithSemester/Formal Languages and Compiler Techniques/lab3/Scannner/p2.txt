@@ -1,0 +1,9 @@
+int @a, @b;
+R(@a);
+R(@b);
+while (@b != 0) execute {
+    int @temp = @b;
+    @b = @a % @b;
+    @a = @temp;
+}
+W(@a);

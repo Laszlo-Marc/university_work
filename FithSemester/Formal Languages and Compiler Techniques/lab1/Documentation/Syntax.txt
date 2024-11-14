@@ -1,0 +1,20 @@
+<type> ::= int | char | string | array
+<letter> ::= a|...|z | A|...|Z
+<digit> ::= 0|...|9
+<identifier>:= @<letter><digit>
+<factor> ::= (<expression>) | <identifier>
+<term operator> ::= *|/|%
+<term> ::= <term><term operator><factor>|<factor>
+<expression operator>::=+|-
+<expression> ::= <expression><expression operator><term>|<term>|<ternary expression>
+<condition> ::= <expression><relational operator><expression>
+<ternary expression>::= <condition>?<expression>:<expression>
+<decl stmt>::=<type> <identifier>; | <type><identifier>=<expression>;
+<assign stmt>::= <identifier>=<expression>;
+<iostatement>::= R(<identifier>)|W(<identifier>)
+<if statement>::=if(<condition>) execute {statement_list}|if(<condition>) execute {statement_list} else execute {statement-list}
+<while statement>::=while(<condition>) execute {statement-list}
+<relational operator>::= "<" | "<=" | "=" | "<>" | ">=" | ">"
+<statement>::= <assign stmt>|<iostatement>|<if statement>|<while statement>|<for statement>
+<statement-list>::=<statement>|<statement-list><statement>
+<program>::= null|<statement-list>

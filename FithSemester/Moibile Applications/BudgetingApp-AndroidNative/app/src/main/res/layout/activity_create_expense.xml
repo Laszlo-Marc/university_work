@@ -1,0 +1,88 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="X"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textAlignment="viewStart"/>
+
+ <TextView
+     android:id="@+id/dropdownTrigger"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="?android:attr/selectableItemBackground"
+     android:drawableRight="@android:drawable/arrow_down_float"
+     android:padding="12dp"
+     android:paddingHorizontal="8dp"
+     android:text="Select Category"
+     android:textColor="#BFBFBF"
+     android:textSize="18sp"
+     android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/etAmount"
+        android:hint="Amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/etDate"
+        android:hint="Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="date"/>
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:hint="Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+
+    <TextView
+        android:id="@+id/accountDropdownTrigger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableRight="@android:drawable/arrow_down_float"
+        android:padding="12dp"
+        android:paddingHorizontal="8dp"
+        android:text="Select Account"
+        android:textColor="#BFBFBF"
+        android:textSize="18sp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/etMerchant"
+        android:hint="Merchant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:text="Save"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

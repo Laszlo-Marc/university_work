@@ -1,0 +1,33 @@
+Alphabet:
+
+-upper and lower case letters of the English alphabet <letter>
+-@ character
+-decimal digits (0-9) <digit>
+-operators <operator>
+-separator <separator>
+
+Identifiers:
+-any combination of letters or digits that start with the @ character but the first character after the @ character needs to be a letter
+
+Constants:
+-integer:
+	<non-zero digit> ::= 1| ... | 9
+	<digit> ::= 0 | ...| 9
+	<sign> ::= +|-
+	<unsigned integer> ::= <non-zero digit> | <unsigned integer> <digit>
+	<signed integer> ::= 0 | <unsigned integer> | <sign> <unsigned integer>
+
+-character: 
+	<character literal> := digit | letter
+	<character const> := "'" {character literal} "'"
+-string:
+	<char> := letter | digit
+	<string> := "{character literal}"
+
+	
+Special symbols, representing:
+-arithmetic operators: + - % * /
+-relational operators: = < <= > >= == ? :=
+-separators: () {} [] : ; space ?
+-reserved words:
+	int char string array execute else if while of  W R

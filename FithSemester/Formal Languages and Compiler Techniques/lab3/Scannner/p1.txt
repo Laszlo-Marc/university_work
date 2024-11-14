@@ -1,0 +1,8 @@
+int @a, @b, @c, @max;
+R(@a);
+R(@b);
+R(@c);
+@max = (@a > @b) ? @a : @b;
+@max = (@max > @c) ? @max : @c;
+W(@max);
+
