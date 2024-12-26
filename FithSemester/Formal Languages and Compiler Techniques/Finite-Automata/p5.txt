@@ -1,0 +1,7 @@
+string @example,@example2;
+read(@example);
+read(@example2);
+@example = "DQWFQQFQeff";
+@example2="AHDGhdbdf";
+write(@example);
+write(@example2);

@@ -1,0 +1,4 @@
+Node ID   Label     Father    Sibling   
+0         S                             
+1         A         0                   
+2         B         0         1         

@@ -1,0 +1,29 @@
+N = program decl_stmt decl_list decl assign_stmt identifier identifier_tail factor term term_operator expression expression_operator ternary_expression condition relational_operator stmt_list stmt simple_stmt io_stmt if_stmt temp_elif_stmt else_stmt elif_stmt while_stmt block type array_decl string_exp
+E = + - * / % < <= = >= > == != := , ? ( ) { } [ ] ; " ' int char string array const execute else if while of True False R W boolean
+S = program
+P =
+program -> stmt_list
+stmt_list -> stmt | stmt stmt_list
+stmt -> decl_stmt | assign_stmt | io_stmt | if_stmt | while_stmt
+decl_stmt -> type identifier ; | type identifier = expression ; | array_decl
+type -> int | char | string | array | boolean
+array_decl -> array identifier [ integer ] ;
+assign_stmt -> identifier = expression ;
+expression -> expression expression_operator term | term | ternary_expression
+expression_operator -> + | -
+term -> term term_operator factor | factor
+term_operator -> * | / | %
+factor -> ( expression ) | identifier | integer
+ternary_expression -> condition ? expression : expression
+condition -> expression relational_operator expression
+relational_operator -> < | <= | = | >= | > | !=
+io_stmt -> R ( identifier );  | W ( string_exp );
+string_exp -> string | identifier
+if_stmt -> if ( condition ) execute block temp_elif_stmt | if ( condition ) execute block temp_elif_stmt else_stmt
+temp_elif_stmt -> null | elif_stmt temp_elif_stmt
+elif_stmt -> elif ( condition ) execute block
+else_stmt -> else execute block
+while_stmt -> while ( condition ) execute block
+block -> { stmt_list }
+identifier -> @ <letter> identifier_tail
+identifier_tail -> <letter> <digit> identifier_tail | <letter> identifier_tail
