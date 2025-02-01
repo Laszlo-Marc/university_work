@@ -1,0 +1,80 @@
+{
+  "expo": {
+    "name": "budget-app",
+    "slug": "budget-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.budgetapp",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app requires access to the camera to scan receipts.",
+        "NSPhotoLibraryUsageDescription": "This app requires access to your photo library to upload receipts.",
+        "NSLocationWhenInUseUsageDescription": "This app uses your location to provide nearby expense categorization."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.anonymous.budgetapp",
+      "permissions": [
+        "INTERNET",
+        "CAMERA",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      [
+        "expo-sqlite",
+        {
+          "enableFTS": true,
+          "useSQLCipher": true,
+          "android": {
+            "enableFTS": false,
+            "useSQLCipher": false
+          },
+          "ios": {
+            "customBuildFlags": [
+              "-DSQLITE_ENABLE_DBSTAT_VTAB=1 -DSQLITE_ENABLE_SNAPSHOT=1"
+            ]
+          }
+        }
+      ],
+      "expo-font",
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactServerFunctions": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "f00c6d84-599c-4f37-aad3-2015f27e62fd"
+      }
+    }
+  }
+}
