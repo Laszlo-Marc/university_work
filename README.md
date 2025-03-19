@@ -27,8 +27,8 @@
 - 🤖 [AI](./FourthSemester/AI)
 
 ## Semester 5
-- 📲 [Mobile Applications](./FithSemester/Mobile%Applications)
-- 🔐 [Public Key Cryptography](./FithSemester/Public%20Key%Cryptography)
+- 📲 [Mobile Applications](./FithSemester/Moibile%20Applications)
+- 🔐 [Public Key Cryptography](./FithSemester/Public%20Key%20Cryptography)
 - 🗣️[Formal Languages and Compiler Techniques](./FithSemester/Formal%20Languages%20and%20Compiler%20Techniques)
-- 👾 [Parallel and Distributed Programming](./FithSemester/Parallel%20and%29Distributed%20Programming)
+- 👾 [Parallel and Distributed Programming](./FithSemester/Parallel%20and%20Distributed%20Programming)
 - 🕶️ [Virtual Reality](./FithSemester/Virtual%20Reality)
