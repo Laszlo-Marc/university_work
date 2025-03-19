@@ -20,7 +20,15 @@
 - 🔑 [Databases](./ThirdSemester/Databases)
 - 📟 [Logical & Functional Programming](./ThirdSemester/Logical%20and%20Functional%20Programming)
 - 📊 [Probabilities & Statistics](./ThirdSemester/Probabilities%20and%20Statistics)
+  
 ## Semester 4
 - 🕸️ [Web Programming](./FourthSemester/Web%20Programming)
 - 🔑 [Databases Management Systems](./FourthSemester/Databases%20Management%20Systems)
 - 🤖 [AI](./FourthSemester/AI)
+
+## Semester 5
+- 📲 [Mobile Applications](./FithSemester/Mobile%Applications)
+- 🔐 [Public Key Cryptography](./FithSemester/Public%20Key%Cryptography)
+- 🗣️[Formal Languages and Compiler Techniques](./FithSemester/Formal%20Languages%20and%20Compiler%20Techniques)
+- 👾 [Parallel and Distributed Programming](./FithSemester/Parallel%20and%29Distributed%20Programming)
+- 🕶️ [Virtual Reality](./FithSemester/Virtual%20Reality)
